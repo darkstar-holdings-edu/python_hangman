@@ -16,9 +16,7 @@ def main():
         print("-" * 40)
         print(stages[lives])
         print(f"{' '.join(display)}\n")
-
-        if len(guesses) > 0:
-            print(f"Used Letters: {', '.join(guesses)}\n")
+        print(f"Used Letters: {', '.join(guesses)}\n")
 
     if "HANGMAN_DEBUG" in os.environ:
         separator = "-" * 80
